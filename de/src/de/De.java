@@ -19,9 +19,15 @@ public class De {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado=new Scanner (System.in);
-        int centi=0,kelvin=0;
-        
-        kelvin=centi+273;
+        int centi=0,kelvin=0,opc;
+        do{
+            System.out.println("introduce una temperatura en grados centigrados: ");
+            centi=teclado.nextInt();
+            kelvin=centi+273;
+            System.out.println("Su temperatura en kelvin es: "+kelvin);
+            System.out.println("Desea introducir otra temperatura?\n1=Si\n2=No");
+            opc=teclado.nextInt();
+        }while(opc!=2);
     }
     
 }
